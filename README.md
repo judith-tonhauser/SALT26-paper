@@ -1,5 +1,5 @@
 # SALT26-paper
-This repository the following paper
+This repository contains the following paper
 
 Tonhauser, Judith (2016). Prosodic cues to presupposition projection. In Moroney, Mary and Little, Carol-Rose and Collard, Jacob and Burgdorf, Dan (eds.), Semantics and Linguistic Theory (SALT) 26. LSA and CLC Publications.
 
