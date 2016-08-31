@@ -13,7 +13,7 @@ library(dplyr)
 
 # Set the path, load the data and helper functions
 
-setwd('/Users/judith/Documents/current-research-topics/NSF-NAI/prop-att-experiments/5-prosody-factives/3-perception-1a/github-materials/')
+setwd('/Users/...')
 d1 <- readRDS("d1.RData") # Experiment 1
 d2 <- readRDS("d2.RData") # Experiment 2
 d3 <- readRDS("d3.RData") # Experiment 3
@@ -43,8 +43,6 @@ ggplot(agr, aes(x=prosody,y=Response),xpd=FALSE) +
   geom_point(data=mean.by.worker, aes(y=Mean), color="grey60",width = 1, height = 0) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25,position=dodge) + 
   scale_x_discrete(breaks=c("H-Pred", "LH-Cont-CC"), labels=c("H* on predicate", "L+H* on content")) +
-  #geom_line(data=mean.by.worker,aes(y=Mean,group=workerid))
-  #theme(axis.text=element_text(size=16), axis.title=element_text(size=22))+
   xlab("Prosody") +
   ylab("Mean certainty rating") +
   scale_y_discrete(breaks=seq(1,7))
@@ -72,8 +70,6 @@ ggplot(agr, aes(x=prosody,y=Response),xpd=FALSE) +
   geom_point(data=mean.by.worker, aes(y=Mean), color="grey60",width = 1, height = 0) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25,position=dodge) + 
   scale_x_discrete(breaks=c("H-Pred", "LH-Pron-CC"), labels=c("H* on predicate", "L+H* on pronoun")) +
-  #geom_line(data=mean.by.worker,aes(y=Mean,group=workerid))
-  #theme(axis.text=element_text(size=16), axis.title=element_text(size=22))+
   xlab("Prosody") +
   ylab("Mean certainty rating") +
   scale_y_discrete(breaks=seq(1,7))
@@ -100,8 +96,6 @@ ggplot(agr, aes(x=prosody,y=Response),xpd=FALSE) +
   geom_point(data=mean.by.worker, aes(y=Mean), color="grey60",width = 1, height = 0) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25,position=dodge) + 
   scale_x_discrete(breaks=c("downHstar", "Hstar"), labels=c("(L+)H* !H*", "H* (L+)H*")) +
-  #geom_line(data=mean.by.worker,aes(y=Mean,group=workerid))
-  #theme(axis.text=element_text(size=16), axis.title=element_text(size=22))+
   xlab("Prosody") +
   ylab("Mean certainty rating") +
   scale_y_discrete(breaks=seq(1,7))
